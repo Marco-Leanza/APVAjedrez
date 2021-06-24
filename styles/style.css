@@ -1,0 +1,177 @@
+.texto {
+    font-family: 'Mate SC', serif;
+    font-size: large;
+    color: #7d0000;
+}
+.titulo {
+    color: #212121;
+    font-family: 'Libre Baskerville', serif;
+}
+.lista { 
+    border:#2926266d ridge 5px;
+    background-image: url(../img/tablero.png) ;
+    color: #000000;
+    font-size: large;
+}
+.nav {
+    color: #7d0000;
+    font-size: 17px ;
+    font-family: 'Mate SC', serif;
+    background-color: #919191e2;
+    flex:1;
+    text-align: center;
+    border: #3e3e3e solid 4px;
+    border-right: 0px;
+    text-decoration: none;
+}
+.nav:active{
+    border: inset #3e3e3e;
+}
+.flnav{
+    background-color: #919191e2 ;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.borde{
+    border-right: #3e3e3e solid 4px;
+}
+.f1, .f3 {
+    flex: 1;
+    text-align: center;
+}
+.f2{
+    flex: 2;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.as{
+    width: 250px;
+    border: #3e3e3e solid 2px;
+    padding:12px;
+    margin-left: 20px;
+    background-color: #c6c6c6;
+}
+.lin{
+    align-self: stretch;
+    border: rgb(84, 113, 61) solid 1px; 
+}
+.i1{
+    width: 250px;
+}
+.p1{
+    width: 250px;
+}
+.img{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 4px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.ordimg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.imgtxt{
+    border:#2926266d ridge 5px;
+    border-top: 0px;
+    margin: 0px;
+    background-color: #00000000;
+    font-family: 'Mate SC', serif;
+    font-size: medium;
+}
+.imgbg{
+    background-image: url(../img/tablero.png);
+    border:#2926266d ridge 5px;
+}
+.tita{
+    margin:0px;
+}
+#primero {
+    text-align: center ;
+    font-size: x-large;
+}
+#ol {
+    font-size: larger ;
+    font-family: 'Mate SC', serif;
+}
+#naveg {
+    font-size: 29px ;
+    color: #101010 ;
+    font-family: 'Libre Baskerville', serif;
+}
+#chess {
+    color: #000000 ;
+}
+#imagen {
+    border:rgb(84, 103, 61);
+    border-width: 5px;
+    border-style: solid;
+}
+#f1, #f3 {
+    flex: 1;
+    text-align: center;
+}
+#f2{
+    flex: 2;
+}
+#imag{
+    text-align: center;
+}
+#imag2{
+    text-align: center;
+}
+#tab{
+    width: 350px;
+}
+h1 {
+    text-align: center;
+    font-size: 44px ;
+}
+i {
+    font-size: 26px;
+}
+body {
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+    background-position: center;
+}
+hr {
+    height: 5px;
+    background-color: #292626;
+}
+nav {
+    margin: 7px;
+    background-image: url(../img/tablero.png);
+    border:#2926266d ridge 5px;
+}
+footer {
+    background-color: #c6c6c6;
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+main{
+    margin-right: 20px;
+}
+aside{
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+}

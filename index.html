@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/467a2a3b82.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href = "styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Mate+SC&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Guía básica de ajedrez</title>
+</head>
+<body>
+    <header>
+        <h1 class = titulo><i class="fas fa-chess-knight"></i> Cómo jugar ajedrez <i class="fas fa-chess-knight fa-flip-horizontal"></i></h1>
+        <p class = "texto" id = "primero">En esta página veremos las reglas básicas del <strong>ajedrez</strong><br><br><img height = "515px" width = "515px"alt="Ajedrez" src="img/ajedrez.png"></p>
+    </header>
+    <hr>
+    <nav>
+        <p id = "naveg">Navegación:</p>
+        <div class = "flnav">
+            <a class = "nav" href = "#emp">Cómo se empieza un juego</a>
+            <a class = "nav" href = "#piezas">Piezas del juego</a>
+            <a class = "nav" href = "#des">Desarrollo de un juego</a>
+            <a class = "nav" href = "#imag">Imágenes y videos</a>
+            <a class = "nav borde" href = "chesscom.html">Introducción a Chess.com</a>
+        </div>
+    </nav>
+    <hr>
+    <div class = "flex">
+        <main>
+            <section>
+                <article>
+                    <h2 class = "titulo" id = "emp">Empezar un juego</h2>
+                    <br>
+                    <p class = "texto container">El ajedrez es un juego de mesa de estrategia de dos jugadores, así que para empezar una partida se debe:</p>
+                    <ol class = "lista" id = "ol">
+                        <li>Conseguir a alguien con quien jugar</li>
+                        </br><li>Conseguir un tablero y fichas de ajedrez (o una aplicación para jugar ajedrez, como <a id = "chess" href="https://chess.com">Chess.com</a>)</li>
+                        </br><li>Acomodar las piezas en sus posiciones correspondientes</li>
+                        </br>
+                    </ol>
+                </article>
+                    <hr>
+                <article>
+                    <h2 class = "titulo" id = "piezas">Piezas</h2>
+                    <br>
+                    <p class = "texto">Cada pieza tiene un lugar inicial idéntico para ambos jugadores. Empezando desde la última fila del tablero son:</p>
+                    <ul class = "texto lista">
+                        <li><i class="fas fa-chess-rook"></i><b> Torres:  -  </b>En las dos esquinas</li>
+                        </br><li><i class="fas fa-chess-knight"></i><b> Caballos:  -  </b>Al lado de las torres</li>
+                        </br><li><i class="fas fa-chess-bishop"></i><b> Alfiles:  -  </b>Al lado de los caballos</li>
+                        </br><li><i class="fas fa-chess-queen"></i><b> Reina:  -  </b>Entre los alfiles, en la misma columna que la reina contraria</li>
+                        </br><li><i class="fas fa-chess-king"></i><b> Rey:  -  </b>Entre los alfiles, en la misma columna que el rey contrario</li>
+                        </br><li><i class="fas fa-chess-pawn"></i><b> Peones:  -  </b>Ocupan toda una fila, justo delante de todas las otras piezas</li>
+                        </br>
+                    </ul>
+                    <br>
+                    <p class = "texto">Las piezas también tienen movimientos únicos. Estos son:</p>
+                    <ul class = "texto lista">
+                        <li><i class="fas fa-chess-rook"></i><b> Torres:  -  </b>Horizontal y vertical sin límites</li>
+                        </br><li><i class="fas fa-chess-knight"></i><b> Caballos:  -  </b>Dos cuadrados en cualquier dirección y, desde ahí, uno vertical si el movimiento inicial fue horizontal, u horizontal si el movimiento inicial fue vertical (ignora otras fichas en el camino)</li>
+                        </br><li><i class="fas fa-chess-bishop"></i><b> Alfiles:  -  </b>En diagonal sin límites</li>
+                        </br><li><i class="fas fa-chess-queen"></i><b> Reina:  -  </b>En cualquier dirección sin límites</li>
+                        </br><li><i class="fas fa-chess-king"></i><b> Rey:  -  </b>Un cuadrado en cualquier dirección. No se puede poner en peligro, ya que si queda desprotegido, el oponente gana</li>
+                        </br><li><i class="fas fa-chess-pawn"></i><b> Peones:  -  </b>Uno o dos cuadrados en su columna si es la primera vez que se mueve, sino solo puede avanzar uno. Puede moverse en diagonal para comer piezas</li>
+                        </br>
+                    </ul>
+                </article>
+                    <hr>
+                <article>
+                    <h2 class = "titulo" id = "des">Desarrollo del juego</h2>
+                    <p class = "texto">El jugador con las piezas blancas hace el primer movimiento, el cual se limita al uso de los peones y caballos. Luego, el oponente responderá al movimiento y se irán alternando los turnos de cada jugador hasta el final del juego.</p>
+                    <p class = "texto">Las piezas se van a ir moviendo con el fin de capturar/comer las piezas enemigas, lo que sucede cuando una pieza se coloca en la misma posición que la pieza del contrincante. Sin embargo, capturar piezas no es el objetivo principal, ya que para ganar se debe capturar al rey o dejarlo sin movimientos posibles (jaque mate). Por eso, si el rey está en peligro, debe moverse o protegerse con otras piezas para evitar la amenaza.</p>
+                    <p class = "texto">En algunas ocasiones las piezas pueden realizar movimientos diferentes a los usuales, como el enroque, movimiento en el cual el rey se coloca detrás de la torre, o el movimiento inicial de los peones, que puede ser de dos cuadrados en vez de uno.</p>
+                    <hr>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h2 class = "titulo" id = "imag">Imágenes y videos para una mejor comprensión</h2>
+                    <br>
+                    <div class = "ordimg">
+                        <div class = "img i1">
+                            <img class = "imgbg" src = "img/standardboard.png" alt = "img1" width = "250px"height = "250px">
+                            <p class = "imgtxt p1">Un tablero de ajedrez en Chess.com en las posiciones iniciales</p>
+                        </div>
+                        <div class = "img i1">
+                            <img class = "imgbg" src = "img/juegoreal.jpg" alt = "img2" width = "250px"height = "250px">
+                            <p class = "imgtxt p1">Una partida en progreso en un tablero físico</p>
+                        </div>
+                        <div class = "img i1">
+                            <img class = "imgbg" src = "img/jaquemate.png" alt = "img3" width = "250px" height = "250px">
+                            <p class = "imgtxt p1">Un ejemplo de jaque mate. El rey no se puede mover</p>
+                        </div>
+                        <div class = "img">
+                            <img class = "imgbg" src = "img/juego.jpg" alt = "img4" width = "350px" height = "225px">
+                            <p class = "imgtxt">Un tablero físico en las posiciones iniciales</p>
+                        </div>
+                        <div class = "img">
+                            <video class = "imgbg" src = "img/partida.mp4" controls loop width = "300px" height = "300px">. . .</video>
+                            <p class = "imgtxt">Una partida completa en Chess.com</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <div class = "lin"></div>
+        <aside>
+            <div class="card as">
+                <div class="card-body">
+                    <h5 class="card-title titulo">Reloj de ajedrez</h5>
+                    <p class="card-text texto">El reloj de ajedrez consiste en un doble cronómetro que mide el tiempo que tiene cada jugador para realizar sus movimientos. Mientras que el reloj del jugador que tiene el turno está en marcha, el de su oponente permanece detenido, hasta cuando el primero efectúe su jugada y detenga su reloj, poniendo así en marcha el reloj del contrario.</p>
+                    <a href="https://es.wikipedia.org/wiki/Ajedrez#El_reloj_de_ajedrez" class="btn btn-outline-secondary btn-sm">Fuente</a>
+                </div>
+            </div>
+            <div class="card as">
+                <div class="card-body">
+                    <h5 class="card-title titulo">Notación algebraica</h5>
+                    <p class="card-text texto">Cada una de las sesenta y cuatro casillas de un tablero de ajedrez es identificada con dos caracteres de manera única. El primer carácter identifica la columna de la casilla, y se representa por una de las siguientes letras minúsculas a, b, c, d, e, f, g y h, ordenadas desde la izquierda del jugador con piezas blancas hasta su derecha. El segundo carácter de una casilla identifica su línea (fila) y se representa por un número del 1 al 8, en orden ascendente, desde el lado del jugador de piezas blancas hasta el lado del jugador de piezas negras. Las casillas, en la posición inicial, de algunas piezas son: torre del lado de la dama blanca a1, dama blanca d1, torre del lado del rey negro h8.</p>
+                    <a href="https://es.wikipedia.org/wiki/Notaci%C3%B3n_algebraica" class="btn btn-outline-secondary btn-sm">Fuente</a>
+                </div>
+            </div>
+            <div class="card as">
+                <div class="card-body">
+                    <h5 class="card-title titulo">Orígenes del ajedrez</h5>
+                    <p class="card-text texto">El ajedrez tal y como lo conocemos hoy nació a partir del juego indio chaturanga antes del s.VII. Tras llegar a Europa occidental en el siglo XVI, evolucionó a lo que ahora conocemos como ajedrez. Uno de los primeros maestros del juego fue un clérigo español llamado Ruy López. Aunque no inventó la apertura que lleva su nombre, la analizó en un libro que publicó en 1561.</p>
+                    <a href="https://www.chess.com/es/article/view/historia-ajedrez" class="btn btn-outline-secondary btn-sm">Fuente</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <hr>
+    <footer class = "texto container">
+        <div id = "f1">Marco Leanza  -  2021</div> 
+        <div id = "f2"></div>
+        <div id = "f3">Desarrollo web 1 - 3.0</div> 
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
